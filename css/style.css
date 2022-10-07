@@ -1168,7 +1168,7 @@ footer .footer_footer .footer_content .security a {
 
 .webp .draw_days .off{ background: #f5f5f5 url(../img/x.webp) center center no-repeat; }
 
-footer{ background: url(../img/Untitled.png) repeat-x, linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%); }
+footer{ background: url(../img/Untitled.png) repeat-x center, linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%); }
 
 .item1::before{ background: url(../img/css_sprites.webp) -75px -10px; }
 
