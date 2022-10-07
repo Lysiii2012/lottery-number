@@ -1000,8 +1000,7 @@ footer{
   margin: 0 auto;
   background: url("../img/untitled.png") repeat-x, linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%); 
   background-position-x: center;
-  background-size: contain;
-  width: 100%;}
+  min-width: 1200px;}
 
 footer .footer_footer {
   width: 1200px;
