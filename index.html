@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css?_v=20221007165224">
+    <title>lottery-number</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_navigation">
+                <a class="logo" href="https://www.smart-winners.com/"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="SmartWinners"></picture></a>
+                <div class="info_acaunt">
+                    <p>Welcome <span>Roma —</span></p>
+                    <a href="#">Logout</a>
+                    <p>Your balance:</p>
+                    <span>Р 0,00</span>
+                </div>
+            </div>
+            <div class="leng_soc">
+                <ul class="header_soc">
+                    <li>
+                        <a href="#">
+                            <svg class="fb" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.13325 9.61503V5.43336H0.746582V3.79969H2.13325V2.58203C2.13325 1.19103 2.99992 0.415359 4.21758 0.415359C4.82425 0.415359 5.34425 0.458693 5.47858 0.458693V1.93203H4.61192C3.91858 1.93203 3.78858 2.23536 3.78858 2.71203V3.75203H5.39625L5.16658 5.40303H3.78858V9.57169H2.13325V9.61503Z" fill="#FAFBFC"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="twet" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.39807 2.5015C8.39807 2.57733 8.39807 2.65316 8.39807 2.71816C8.39807 4.96066 6.6864 7.54983 3.5664 7.54983C2.60223 7.54983 1.7139 7.26816 0.955566 6.7915C1.08557 6.80233 1.2264 6.81316 1.3564 6.81316C2.14723 6.81316 2.8839 6.54233 3.4689 6.08733C2.7214 6.0765 2.09307 5.57816 1.88723 4.9065C1.99557 4.92816 2.09307 4.939 2.21223 4.939C2.3639 4.939 2.51557 4.91733 2.6564 4.874C1.8764 4.72233 1.2914 4.03983 1.2914 3.2165C1.2914 3.20566 1.2914 3.20566 1.2914 3.19483C1.5189 3.32483 1.7789 3.40066 2.06057 3.4115C1.60557 3.10816 1.30223 2.58816 1.30223 1.99233C1.30223 1.67816 1.3889 1.38566 1.52973 1.1365C2.3639 2.16566 3.62057 2.83733 5.0289 2.91316C4.9964 2.794 4.98557 2.65316 4.98557 2.52316C4.98557 1.58066 5.7439 0.82233 6.6864 0.82233C7.1739 0.82233 7.61806 1.02816 7.9214 1.35316C8.3114 1.27733 8.6689 1.1365 9.00473 0.941497C8.87473 1.34233 8.6039 1.66733 8.25723 1.884C8.6039 1.84066 8.9289 1.754 9.23223 1.61316C9.01556 1.95983 8.7339 2.26316 8.39807 2.5015Z" fill="#FAFBFC"/>
+                            </svg>                                    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="message" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00005 0.79961C3.14438 0.79961 0.800049 2.96904 0.800049 5.65623C0.800049 7.08787 1.48038 8.35988 2.53338 9.2459V11.1991L4.45652 10.262C4.94532 10.4056 5.45665 10.5128 6.00005 10.5128C8.85571 10.5128 11.2 8.34341 11.2 5.65623C11.2 2.96904 8.85571 0.79961 6.00005 0.79961ZM6.00005 1.64424C8.40895 1.64424 10.3334 3.44583 10.3334 5.65623C10.3334 7.86662 8.40895 9.66821 6.00005 9.66821C5.48222 9.66821 4.98778 9.57235 4.52412 9.41736L4.34818 9.36457L3.40005 9.82658V8.87637L3.23755 8.74419C2.27598 8.00556 1.66672 6.89867 1.66672 5.65623C1.66672 3.44583 3.59115 1.64424 6.00005 1.64424ZM5.51255 4.3234L2.89912 7.01566L5.24172 5.74871L6.48755 7.05535L9.07411 4.32298L6.78525 5.57725L5.51255 4.3234Z" fill="white"/>
+                            </svg>                                     
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="w_up" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.16673 5.95335C7.03673 5.91002 6.4734 5.60668 6.3434 5.56335C6.2134 5.52002 6.17006 5.52002 6.0834 5.60668C5.96416 5.77408 5.83387 5.93332 5.6934 6.08335C5.60673 6.17002 5.5634 6.17002 5.4334 6.12668C5.07113 6.00474 4.74396 5.79654 4.48006 5.52002C4.2114 5.29095 3.99053 5.01117 3.83006 4.69668C3.7434 4.56668 3.83006 4.52335 3.8734 4.43668C3.94148 4.37334 3.99988 4.30034 4.04673 4.22002C4.09006 4.13335 4.1334 4.09002 4.17673 4.00335C4.22006 3.91668 4.17673 3.87335 4.17673 3.78668C4.17673 3.70002 3.91673 3.13668 3.78673 2.92002C3.65673 2.70335 3.6134 2.70335 3.52673 2.70335H3.31006C3.19652 2.70841 3.0887 2.75462 3.00673 2.83335C2.86427 2.95626 2.75133 3.10968 2.67631 3.28223C2.60129 3.45478 2.56612 3.64201 2.5734 3.83002C2.61311 4.27301 2.77848 4.69546 3.05006 5.04768C3.54231 5.82755 4.25171 6.44659 5.09106 6.82868C5.3944 6.95868 5.61106 7.00202 5.7844 7.08868C6.02237 7.16501 6.27578 7.17992 6.52106 7.13202C6.85176 7.04373 7.1423 6.84494 7.3444 6.56868C7.39916 6.38581 7.42833 6.19623 7.43106 6.00535C7.34254 6.00611 7.25456 5.99144 7.17106 5.96202L7.16673 5.95335ZM5.00006 8.90002C4.28019 8.90867 3.57258 8.71336 2.95906 8.33669L2.82906 8.25002L1.30806 8.64002L1.7024 7.16668L1.61573 7.03668C1.21961 6.39767 1.00952 5.66085 1.00906 4.90902C1.00821 4.11845 1.24191 3.34539 1.68059 2.6877C2.11928 2.03001 2.74322 1.51724 3.47345 1.21431C4.20367 0.911375 5.00736 0.831888 5.78278 0.985911C6.5582 1.13993 7.2705 1.52054 7.82952 2.07956C8.38854 2.63858 8.76915 3.35088 8.92317 4.1263C9.07719 4.90172 8.99771 5.70541 8.69477 6.43564C8.39184 7.16586 7.87907 7.78981 7.22138 8.22849C6.56369 8.66717 5.79063 8.90088 5.00006 8.90002ZM8.3844 1.56802C7.4745 0.690959 6.26377 0.194883 5.00006 0.181351C3.73586 0.181351 2.52344 0.683552 1.62952 1.57747C0.735597 2.4714 0.233396 3.68382 0.233396 4.94802C0.233185 5.78764 0.457611 6.61203 0.883396 7.33568L0.181396 9.81868L2.7424 9.16868C3.44761 9.55272 4.24053 9.74685 5.0434 9.73202C5.66936 9.73202 6.2892 9.60872 6.86752 9.36918C7.44584 9.12963 7.97131 8.77852 8.41394 8.33589C8.85656 7.89327 9.20767 7.36779 9.44722 6.78948C9.68677 6.21116 9.81006 5.59132 9.81006 4.96535C9.77937 3.69596 9.26651 2.48589 8.37573 1.58102" fill="#FAFBFC"/>
+                            </svg>                                    
+                        </a>
+                    </li>
+                </ul>
+                <div class="leng">
+                    <a class="uas" href="#">English</a>
+                    <a class="btn_more"></a>
+                    <ul class="more_leng">
+                        <li><a class="fran" href="#">Français</a></li>
+                        <li><a class="rus" href="#">Русский</a></li>
+                        <li><a class="ua" href="#">Українська</a></li>
+                        <li><a class="spanish" href="#">Spanish</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h1>Mega Millions</h1>
+            <h2> Play the official USA Mega Millions lottery online</h2>
+            <ul class="line_step">
+                <li class="active">Choose Number <a href="#">1</a></li>
+                <li>Sign In <a href="#">2</a></li>
+                <li>Finalize Order <a href="#">3</a></li>
+                <li>Play <a href="#">4</a></li>
+            </ul>
+            <div class="section_lot">
+                <picture><source srcset="img/icon.webp" type="image/webp"><img src="img/icon.png" alt="mega millions"></picture>
+                <div class="jackpot">
+                    <h3>NEXT JACKPOT</h3>
+                    <p>$410 000 000</p>
+                </div>
+                <div class="next_draw">
+                    <div>
+                        <p>Next Draw: </p>
+                        <span>Sat 08.10.2022</span>
+                    </div>
+                    <p class="time">1d 6:12:17
+                    </p>
+                </div>
+            </div>
+            <div class="choice_number">
+                <div class="select_lines">
+                    <h4>1 - How many lines would you like to play?</h4>
+                    <div class="select_box">
+                        <select class="select" name="сlothes">
+                            <option selected >Lines: 4</option>
+                            <option value="5">Lines: 6</option>
+                            <option value="6">Lines: 5</option>
+                            <option value="7">Lines: 7</option>
+                            <option value="8">Lines: 8</option>
+                            <option value="9">Lines: 9</option>
+                            <option value="10">Lines: 10</option>
+                            <option value="11">Lines: 11</option>
+                            <option value="12">Lines: 12</option>
+                            <option value="13">Lines: 13</option>
+                            <option value="14">Lines: 14</option>
+                            <option value="15">Lines: 15</option>
+                            <option value="16">Lines: 16</option>
+                            <option value="17">Lines: 17</option>
+                            <option value="18">Lines: 18</option>
+                            <option value="19">Lines: 19</option>
+                            <option value="20">Lines: 20</option>
+                            <option value="21">Lines: 21</option>
+                            <option value="22">Lines: 22</option>
+                            <option value="23">Lines: 23</option>
+                            <option value="24">Lines: 24</option>
+                            <option value="25">Lines: 25</option>
+                            <option value="26">Lines: 26</option>
+                            <option value="27">Lines: 27</option>
+                            <option value="28">Lines: 28</option>
+                            <option value="29">Lines: 29</option>
+                            <option value="30">Lines: 30</option>
+                            <option value="31">Lines: 31</option>
+                            <option value="32">Lines: 32</option>
+                            <option value="33">Lines: 33</option>
+                            <option value="34">Lines: 34</option>
+                            <option value="35">Lines: 35</option>
+                            <option value="36">Lines: 36</option>
+                            <option value="37">Lines: 37</option>
+                            <option value="38">Lines: 38</option>
+                            <option value="39">Lines: 39</option>
+                            <option value="40">Lines: 40</option>
+                        </select>
+                    </div>
+                </div>
+                <a id="smartpicker" class="smp">SMART<span>Picker</span></a>
+                <a class="how_it_work" href="/lottery-smart-play">How does it Work?</a>
+            </div>
+        </section>
+        <div class="conteiner">
+            <div class="lines lines_f">
+                <div>
+                    <span class="line line_1">Line 1:</span>
+                    <ul class="lines_icon">        
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="stars"></li>
+                    </ul>
+                </div>
+                <a class="clear_line">Clear Line</a>
+            </div>
+            <div class="choose">
+                <div class="choose_5">
+                    <p class="txtl">Choose 5 numbers</p>
+                    <ul class="left float_l" id="ulnumberrange">
+                        <li id="num-01">01</li>
+                        <li id="num-02">02</li>
+                        <li id="num-03">03</li>
+                        <li id="num-04">04</li>
+                        <li id="num-05">05</li>
+                        <li id="num-06">06</li>
+                        <li id="num-07">07</li>
+                        <li id="num-08">08</li>
+                        <li id="num-09">09</li>
+                        <li id="num-10">10</li>
+                        <li id="num-11">11</li>
+                        <li id="num-12">12</li>
+                        <li id="num-13">13</li>
+                        <li id="num-14">14</li>
+                        <li id="num-15">15</li>
+                        <li id="num-16">16</li>
+                        <li id="num-17">17</li>
+                        <li id="num-18">18</li>
+                        <li id="num-19">19</li>
+                        <li id="num-20">20</li>
+                        <li id="num-21">21</li>
+                        <li id="num-22">22</li>
+                        <li id="num-23">23</li>
+                        <li id="num-24">24</li>
+                        <li id="num-25">25</li>
+                        <li id="num-26">26</li>
+                        <li id="num-27">27</li>
+                        <li id="num-28" class="active">28</li>
+                        <li id="num-29">29</li>
+                        <li id="num-30">30</li>
+                        <li id="num-31">31</li>
+                        <li id="num-32">32</li>
+                        <li id="num-33">33</li>
+                        <li id="num-34">34</li>
+                        <li id="num-35">35</li>
+                        <li id="num-36">36</li>
+                        <li id="num-37">37</li>
+                        <li id="num-38">38</li>
+                        <li id="num-39">39</li>
+                        <li id="num-40">40</li>
+                        <li id="num-41">41</li>
+                        <li id="num-42">42</li>
+                        <li id="num-43">43</li>
+                        <li id="num-44">44</li>
+                        <li id="num-45">45</li>
+                        <li id="num-46">46</li>
+                        <li id="num-47">47</li>
+                        <li id="num-48">48</li>
+                        <li id="num-49">49</li>
+                        <li id="num-50">50</li>
+                        <li id="num-51">51</li>
+                        <li id="num-52">52</li>
+                        <li id="num-53">53</li>
+                        <li id="num-54">54</li>
+                        <li id="num-55">55</li>
+                        <li id="num-56">56</li>
+                        <li id="num-57">57</li>
+                        <li id="num-58">58</li>
+                        <li id="num-59">59</li>
+                        <li id="num-60">60</li>
+                        <li id="num-61">61</li>
+                        <li id="num-62">62</li>
+                        <li id="num-63">63</li>
+                        <li id="num-64">64</li>
+                        <li id="num-65">65</li>
+                        <li id="num-66">66</li>
+                        <li id="num-67">67</li>
+                        <li id="num-68">68</li>
+                        <li id="num-69">69</li>
+                        <li id="num-70">70</li>
+                    </ul>
+                </div>
+                <div class="choose_1">
+                    <p class="txtr float_l">Choose 1 star</p>
+                    <ul class="right float_l" id="ulextranumberrange">
+                        <li id="ext-01">01</li>
+                        <li id="ext-02">02</li>
+                        <li id="ext-03">03</li>
+                        <li id="ext-04">04</li>
+                        <li id="ext-05">05</li>
+                        <li id="ext-06">06</li>
+                        <li id="ext-07">07</li>
+                        <li id="ext-08">08</li>
+                        <li id="ext-09">09</li>
+                        <li id="ext-10">10</li>
+                        <li id="ext-11">11</li>
+                        <li id="ext-12">12</li>
+                        <li id="ext-13">13</li>
+                        <li id="ext-14">14</li>
+                        <li id="ext-15">15</li>
+                        <li id="ext-16">16</li>
+                        <li id="ext-17">17</li>
+                        <li id="ext-18">18</li>
+                        <li id="ext-19">19</li>
+                        <li id="ext-20">20</li>
+                        <li id="ext-21">21</li>
+                        <li id="ext-22">22</li>
+                        <li id="ext-23">23</li>
+                        <li id="ext-24">24</li>
+                        <li id="ext-25">25</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lines lines_border active">
+                <div>
+                    <span class="line line_2">Line 2:</span>
+                    <ul class="lines_icon">
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="stars"></li>                    
+                    </ul>
+                </div>
+                <a class="clear_line">Clear Line</a>
+            </div>
+            <div class="lines lines_border">
+                <div>
+                    <span class="line line_3">Line 3:</span>
+                    <ul class="lines_icon">
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="stars"></li>                    
+                    </ul>
+                </div>
+                <a class="clear_line">Clear Line</a>
+            </div>
+            <div class="lines lines_border line_l">
+                <div>
+                    <span class="line line_4">Line 4:</span>
+                    <ul class="lines_icon">
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="linenumber"></li>
+                        <li class="stars"></li>                    
+                    </ul>
+                </div>
+                <a class="clear_line">Clear Line</a>
+            </div>
+            <div class="footer_choose">
+                <div class="texts">
+                    <p class="ticket">Tickets</p>
+                    <p class="info" id="lblconsecutivesdraws">Consecutive Draws: 1 X Lines:  4</p>
+                    <p class="total">Total</p>
+                    <p class="prise">16 $</p>
+                </div>
+                <img src="img/animated_arrows.gif" alt="lottery">
+                <a class="play_it" href="#">Play It</a>
+            </div>
+        </div>
+        <div class="conteiner_question">
+            <picture><source srcset="img/guarant.webp" type="image/webp"><img class="guarant" src="img/guarant.png" alt="guarant"></picture>
+            <h3>DRAW FORMAT</h3>
+            <p class="text">To play select 5 primary numbers out of a 1-75 pool, plus 1 secondary number (Mega Ball) from a separate 1-15 pool. Win the jackpot by matching all 6 numbers drawn. Always use our Smart Play option to better your win odds.</p>
+            <h3>DRAW DAYS</h3>
+            <ul class="draw_days">
+                <li class="off">
+                    <span>Mon</span>
+                </li>
+                <li class="on">
+                    <span>Tue</span>
+                </li>
+                <li class="off">
+                    <span>Wen</span>
+                </li>
+                <li class="off">
+                    <span>Thu</span>
+                </li>
+                <li class="on">
+                    <span>Fri</span>
+                </li>
+                <li class="off">
+                    <span>Sat</span>
+                </li>
+                <li class="off">
+                    <picture><source srcset="/images/flags/United-States.webp" type="image/webp"><img alt="" src="/images/flags/United-States.png" style="display: none"></picture>
+                    <span>Sun</span>
+                </li>
+            </ul>
+            <h3>FREQUENTLY ASKED QUESTION (F.A.Q.)</h3>
+            <ul class="question_more">
+                <li><a class="first" href="#no_scroll" href="#">How do I know if I have won the lottery?</a>
+                    <p class="first_an">SmartWinners will email you the results after each draw. You are also able to track all your winnings on the “My Account” page on the SmartWinners website. In addition, because all the lotteries on SmartWinners are official lotteries, you can verify your results at the lottery’s official website.</p>
+                </li>
+                <li>
+                    <li><a class="secound" href="#no_scroll">Can I play lotteries from other countries?</a>
+                        <p class="secound_an">
+                            Yes! Thanks to SmartWinners lottery messenger service, you can play any lottery in the world without leaving your home. <br>Our local agents across the world buy lottery tickets on your behalf. The tickets are then scanned and placed in your personal account. This allows you to play lotteries from any country in the world.
+                        </p>
+                </li>
+                <li><a class="third" href="#no_scroll">How do I collect my winnings?</a>
+                    <div class="third_an">
+                        <p>Your winnings can be withdrawn to your credit card or bank account at any location in the world.
+                        </p>
+                        <p>If withdrawing your winnings to a credit card or bank account is not possible, we also provide withdrawal services to various e-wallet services such as QIWI and Skrill.
+                        </p>
+                        <p>Winnings can be collected in whole, in part, or used to purchase additional lottery tickets.
+                        </p>
+                        <p>When you win the jackpot, SmartWinners will fly you to the country where you won where our representative will provide you with your winning ticket and provide you with the details on how to collect your prize at the official lottery office. <br>* In the event you are unable to collect your prize in person, SmartWinners can provide you a nominee to collect your winnings for you. The nominee will pay the local taxes for you and credit the remaining winnings to your personal account.</p>
+                    </div>
+                </li>
+                <li><a class="four" href="#no_scroll">Are there any fees applied to my winnings?</a>
+                <p class="four_an">You get the full amount of your winnings minus any country taxes. Taxes depend on the laws of each specific country and state.
+                </p>
+                </li>
+                <li>
+                    <a class="five" href="#no_scroll">How does SmartWinners guarantee that I will get my winnings?</a>
+                    <div class="five_an">
+                        <p>SmartWinners in a registered in the UK under the legal name “Smart Tech Limited”. We bank with the UK’s largest bank HSBC.
+                        </p>
+                        <p>Purchasing a lottery ticket through SmartWinners enters our company into an agreement with you where we are obliged to pay you all your winnings in accordance with the laws of England.
+                        </p>
+                        <p>You will receive the following proof of purchase: <br>
+                            1) An e-mail confirmation including details of your purchase. <br>
+                            2) Scan the ticket, which can later be viewed through your SmartWinners account. <br>
+                            3) The obligation of the SmartWinners to pay you your winnings, in full, in accordance with the Terms and Conditions.</p>
+                        <p>
+                            <span>The proof of purchase guarantees you receive your winnings.</span>SmartWinners does not have any legal rights to your tickets or prizes. <br>In the last five years, SmartWinners has paid out prizes ranging from $20 to jackpots of millions of dollars!.
+                        </p>
+                        <div>
+                            <p>Our mailing address:</p>
+                            <p>13 Freeland Park,</p>
+                            <p>Wareham Road,</p>
+                            <p>Poole,Dorset,</p>
+                            <p>BH16 6FH,</p>
+                            <p>UK</p>
+                            <p>Our office phone: 44-20-33973506</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="six" href="#no_scroll">Is my personal and financial data protected?</a>
+                    <p class="six_an">The security and privacy of our customers in our top priority. We take all necessary measures to protect your personal and financial data. SmartWinners website is 100% PCI compliance and uses 128-bit encryption SSL Comodo Secure to encrypt pages.
+                    </p>
+                </li>
+                <li>
+                    <a class="seven" href="#no_scroll">Can I get a refund if I am not satisfied with my purchase?</a>
+                    <p class="seven_an">
+                        We provide the highest quality services, so we offer a money back guarantee to all new customers for their first purchase if they, for whatever reason, are not satisfied. <br>
+                        This money back guarantee can only be used for the first purchase made on our site, as indicated in the Terms and Conditions of SmartWinners.
+                    </p>
+                </li>
+            </ul>   
+        </div>
+        <div class="conteiner_side">
+            <h3>LAST DRAW - WINNING NUMBERS</h3>
+            <ul class="last_draw">
+                <li>15</li>
+                <li>18</li>
+                <li>25</li>
+                <li>33</li>
+                <li>38</li>
+                <li class="star">25</li>
+            </ul>
+            <h3>MEGA MILLIONS - PRIZES DISTRIBUTION</h3>
+            <table class="odds">
+                <thead>
+                    <tr>
+                        <td>
+                            Players</td>
+                        <td class="tab-winners">
+                            Guessed Nubmers</td>
+                        <td>
+                            Each Won</td>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td class="tab-winners">464&nbsp;970</td>
+                        <td class="math">0 + 1</td>                                <td class="prize">$2</td>
+                    </tr>    
+                         <tr>
+                            <td class="tab-winners">195&nbsp;776</td>
+                            <td class="math">1 + 1</td>
+                            <td class="prize">$4</td>
+                         </tr>            
+                        <tr>
+                            <td class="tab-winners">31&nbsp;439</td>
+                            <td class="math">3</td>
+                            <td class="prize">$10</td>
+                        </tr>                    
+                        <tr>
+                            <td class="tab-winners">26&nbsp;169</td>
+                            <td class="math">2 + 1</td>
+                            <td class="prize">$10</td>
+                        </tr>                
+                        <tr>
+                            <td class="tab-winners">1&nbsp;299</td>
+                            <td class="math">3 + 1</td>
+                            <td class="prize">$200</td>
+                        </tr>                
+                        <tr>
+                            <td class="tab-winners">486</td>
+                            <td class="math">4</td>
+                            <td class="prize">$500</td>
+                        </tr>                
+                        <tr>
+                            <td class="tab-winners">18</td>
+                            <td class="math">4 + 1</td>
+                            <td class="prize">$10&nbsp;000</td>
+                        </tr>                
+                        <tr>
+                            <td class="tab-winners">2</td>
+                            <td class="math">5</td>
+                            <td class="prize">$1&nbsp;000&nbsp;000</td>
+                        </tr>                
+                </tbody>
+            </table>
+            <p>This game is called MEGA for a reason. It holds the world record for largest payout at a cash value of USD $474 million! The game starts with a USD $15 million and climbs from there with no cap on the payout. And the Megaplier option increases non-jackpot winnings by 2-5 times. The win odds are steep, hence the huge jackpots. But you only need to win once and you're set for multiple lifetimes. When you do win you can opt for either a lump sum payout or an annual annuity.</p>
+            <div class="why">
+                <ul>
+                    <li>
+                        <span >Holds world record for largest payout</span>
+                    </li>                    
+                   <li>
+                        <span >Megaplier option increases non-jackpot winnings 2-5 times</span>
+                    </li>    
+                   <li>
+                        <span>Tier 1 minimum: USD $15,000,000</span>
+                    </li>    
+                   <li>
+                        <span>Tier 1 maximum: None</span>
+                    </li>    
+                   <li>
+                        <span>Number of Tiers: 9</span>
+                    </li>    
+                    <li>
+                       <span>Record payout USD $474,000,000 (cash value)</span>
+                    </li>    
+                    <li>
+                       <span>Top Tier win odds: 1 in 258,890,850</span>
+                    </li>    
+                    <li>
+                       <span>Tuesday and Friday at 23:00 EST</span>
+                    </li>    
+                    <li>
+                       <span>US Federal tax of 25% for winnings over $600 + state local tax</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_choose">
+                <div class="texts">
+                    <p class="ticket">Tickets</p>
+                    <p class="info" id="lblconsecutivesdraws">Consecutive Draws: 1 X Lines:  4</p>
+                    <p class="total">Total</p>
+                    <p class="prise">16 $</p>
+                </div>
+                <img src="img/animated_arrows.gif" alt="lottery">
+                <a class="play_it" href="#">Play It</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_footer">
+            <div class="soc_footer">
+                <div class="footer_up">
+                    <a class="up_deck" href="#"><svg width="22" height="22" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7955 11.7219C13.5517 11.6407 12.4955 11.0719 12.2517 10.9907C12.008 10.9094 11.9267 10.9094 11.7642 11.0719C11.5407 11.3858 11.2964 11.6844 11.033 11.9657C10.8705 12.1282 10.7892 12.1282 10.5455 12.0469C9.86625 11.8183 9.2528 11.4279 8.758 10.9094C8.25426 10.4799 7.84012 9.95533 7.53925 9.36567C7.37675 9.12191 7.53925 9.04066 7.6205 8.87816C7.74815 8.7594 7.85765 8.62252 7.9455 8.47191C8.02675 8.30941 8.108 8.22816 8.18925 8.06566C8.2705 7.90316 8.18925 7.82191 8.18925 7.65941C8.18925 7.49691 7.70175 6.44066 7.458 6.03441C7.21425 5.62816 7.133 5.62816 6.9705 5.62816H6.56425C6.35136 5.63766 6.14919 5.7243 5.9955 5.87191C5.72839 6.10236 5.51663 6.39004 5.37597 6.71356C5.23531 7.03709 5.16935 7.38815 5.183 7.74066C5.25746 8.57128 5.56753 9.36337 6.07675 10.0238C6.99971 11.486 8.32984 12.6467 9.90362 13.3632C10.4724 13.6069 10.8786 13.6882 11.2036 13.8507C11.6498 13.9938 12.125 14.0217 12.5849 13.9319C13.2049 13.7664 13.7497 13.3936 14.1286 12.8757C14.2313 12.5328 14.286 12.1773 14.2911 11.8194C14.1251 11.8208 13.9602 11.7933 13.8036 11.7382L13.7955 11.7219ZM9.733 17.2469C8.38324 17.2631 7.05647 16.8969 5.90612 16.1907L5.66237 16.0282L2.8105 16.7594L3.54987 13.9969L3.38737 13.7532C2.64465 12.555 2.25073 11.1735 2.24987 9.76379C2.24827 8.28147 2.68646 6.83199 3.50899 5.59882C4.33152 4.36564 5.50141 3.40421 6.87059 2.83621C8.23977 2.26821 9.74668 2.11917 11.2006 2.40797C12.6545 2.69676 13.9901 3.4104 15.0382 4.45856C16.0864 5.50671 16.8 6.84227 17.0888 8.29619C17.3776 9.75011 17.2286 11.257 16.6606 12.6262C16.0926 13.9954 15.1311 15.1653 13.898 15.9878C12.6648 16.8103 11.2153 17.2485 9.733 17.2469ZM16.0786 3.49941C14.3726 1.85493 12.1024 0.924787 9.733 0.899414C7.36263 0.899414 5.08934 1.84104 3.41323 3.51715C1.73712 5.19325 0.795498 7.46654 0.795498 9.83692C0.795102 11.4112 1.2159 12.9569 2.01425 14.3138L0.697998 18.9694L5.49987 17.7507C6.82214 18.4707 8.30888 18.8347 9.81425 18.8069C10.9879 18.8069 12.1501 18.5757 13.2345 18.1266C14.3188 17.6774 15.3041 17.0191 16.134 16.1892C16.9639 15.3593 17.6223 14.374 18.0714 13.2896C18.5206 12.2053 18.7517 11.0431 18.7517 9.86942C18.6942 7.48932 17.7326 5.22042 16.0624 3.52379" fill="#FAFBFC"/>
+                        </svg>
+                        </a>
+                    <div class="up_content">
+                        <p>Live chat by WhatsApp</p>
+                        <span>Customer Service</span>
+                    </div>                        
+                </div>
+                <ul class="footer_social">
+                    <li>
+                        <a class="fb" href="#">
+                            <svg width="11" height="21" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.13325 9.61471V5.43304H0.746582V3.79937H2.13325V2.58171C2.13325 1.19071 2.99992 0.415039 4.21758 0.415039C4.82425 0.415039 5.34425 0.458372 5.47858 0.458372V1.93171H4.61192C3.91858 1.93171 3.78858 2.23504 3.78858 2.71171V3.75171H5.39625L5.16658 5.40271H3.78858V9.57137H2.13325V9.61471Z" fill="#FAFBFC"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twetter" href="#">
+                            <svg width="18" height="15" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M8.39807 2.50143C8.39807 2.57727 8.39807 2.6531 8.39807 2.7181C8.39807 4.9606 6.6864 7.54977 3.5664 7.54977C2.60223 7.54977 1.7139 7.2681 0.955566 6.79143C1.08557 6.80227 1.2264 6.8131 1.3564 6.8131C2.14723 6.8131 2.8839 6.54227 3.4689 6.08727C2.7214 6.07643 2.09307 5.5781 1.88723 4.90643C1.99557 4.9281 2.09307 4.93893 2.21223 4.93893C2.3639 4.93893 2.51557 4.91727 2.6564 4.87393C1.8764 4.72227 1.2914 4.03977 1.2914 3.21643C1.2914 3.2056 1.2914 3.2056 1.2914 3.19477C1.5189 3.32477 1.7789 3.4006 2.06057 3.41143C1.60557 3.1081 1.30223 2.5881 1.30223 1.99227C1.30223 1.6781 1.3889 1.3856 1.52973 1.13643C2.3639 2.1656 3.62057 2.83727 5.0289 2.9131C4.9964 2.79393 4.98557 2.6531 4.98557 2.5231C4.98557 1.5806 5.7439 0.822266 6.6864 0.822266C7.1739 0.822266 7.61806 1.0281 7.9214 1.3531C8.3114 1.27727 8.6689 1.13643 9.00473 0.941432C8.87473 1.34227 8.6039 1.66727 8.25723 1.88393C8.6039 1.8406 8.9289 1.75393 9.23223 1.6131C9.01556 1.95977 8.7339 2.2631 8.39807 2.50143Z" fill="#FAFBFC"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="message" href="#">
+                            <svg width="23" height="23" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00005 0.799805C3.14438 0.799805 0.800049 2.96923 0.800049 5.65642C0.800049 7.08807 1.48038 8.36008 2.53338 9.24609V11.1993L4.45652 10.2622C4.94532 10.4058 5.45665 10.513 6.00005 10.513C8.85571 10.513 11.2 8.34361 11.2 5.65642C11.2 2.96923 8.85571 0.799805 6.00005 0.799805ZM6.00005 1.64443C8.40895 1.64443 10.3334 3.44603 10.3334 5.65642C10.3334 7.86681 8.40895 9.66841 6.00005 9.66841C5.48222 9.66841 4.98778 9.57254 4.52412 9.41755L4.34818 9.36476L3.40005 9.82678V8.87657L3.23755 8.74438C2.27598 8.00576 1.66672 6.89887 1.66672 5.65642C1.66672 3.44603 3.59115 1.64443 6.00005 1.64443ZM5.51255 4.3236L2.89912 7.01585L5.24172 5.74891L6.48755 7.05555L9.07411 4.32317L6.78525 5.57745L5.51255 4.3236Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <div class="links">
+                    <h3>USEFUL LINKS</h3>
+                    <ul>
+                        <li><a href="#">Lottery Results & Winners</a></li>
+                        <li><a href="#">Lottery Promotions</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Acceptable Use Policy</a></li>
+                        <li><a href="#">Website Use Policy</a></li>
+                        <li><a class="bolt" href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="info_smart_win">
+                    <h3>SMARTWINNERS</h3>
+                    <p>The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
+                    <p>Our registered business address is <br> Unit 6158, PO Box 6945, London, W1A 6US, United Kingdom.</p>
+                </div>
+                <div class="info_payment">
+                    <div class="methods">
+                        <h3>PAYMENT METHODS</h3>
+                        <ul class="ment">
+                            <li><a class="item1" href="#"></a></li>
+                            <li><a class="item2" href="#"></a></li>
+                            <li><a class="item3" href="#"></a></li>
+                            <li><a class="item4" href="#"></a></li>
+                            <li><a class="item5" href="#"></a></li>
+                            <li><a class="item6" href="#"></a></li>
+                            <li><a class="item7" href="#"></a></li>
+                            <li><a class="item8" href="#"></a></li>
+                            <li><a class="item9" href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="security">
+                        <h3>SECURITY & TRUST</h3>
+                       <div>
+                        <a href="#"><picture><source srcset="img/ctv.webp" type="image/webp"><img src="img/ctv.png" alt="security"></picture></a>
+                        <a href="#"><picture><source srcset="img/comodo.webp" type="image/webp"><img src="img/comodo.png" alt="trust"></picture></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
