@@ -1170,8 +1170,7 @@ footer .footer_footer .footer_content .security a {
 
 footer{ background: url(../img/Untitled.png) repeat-x, linear-gradient(0deg, rgba(224, 224, 224, 0.47) 0%, rgba(225, 225, 225, 0.16) 20.75%, rgba(255, 254, 254, 0.26) 84.14%, #FFFFFF 126.52%); 
   background-position-x: center;
-  margin: 0 auto;
-  background-size: contain;}
+  margin: 0 auto;;}
 
 .item1::before{ background: url(../img/css_sprites.webp) -75px -10px; }
 
